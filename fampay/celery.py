@@ -17,9 +17,8 @@ def debug_task(self):
 
 
 app.conf.beat_schedule = {
-    'add-every-5-seconds': {
+    'add-every-60-seconds': {
         'task': 'fetch_latest_videos',
-        'schedule': 5.0,
-        'args': (16, 16)
+        'schedule': 60.0,
     }
 }
